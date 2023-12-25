@@ -50,8 +50,10 @@
     
  function attackWRK() {
        //window.BLightApp.testInvoke();
-       var getUserId4=window.BLightApp.getBattery();
+       var getUserId4=window.BLightApp.getUserAgent();
          alert(getUserId4);
+        var getUserId5=window.BLightApp.getDeviceInfo();
+         alert(getUserId5);
     
       alert("1");
     window.BLightApp.closeWindow();
@@ -61,8 +63,8 @@
      
      
  
-  // var getUserInfo = window.SPJSBridge.getUserInfo();
-  // alert('getUserInfo:'+ getUserInfo);
+      // var getUserInfo = window.SPJSBridge.getUserInfo();
+      // alert('getUserInfo:'+ getUserInfo);
   // var getUserToken=window.__napos__.getNaposSid();
    //alert(getUserToken);
    //var getUserId=window.__napos__.getNaposRSTid()
